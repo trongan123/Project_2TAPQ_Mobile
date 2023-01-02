@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".controller.EditHistoryPondActivity">
+
+    <include layout="@layout/toolbar_history_pond" />
+
+    <LinearLayout
+        android:id="@+id/ll_EditHistoryPond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_AnhAo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@drawable/btn_backround_edit"
+            android:src="@drawable/logo_nhomdoan" />
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_MatDoNuoc_EditHistoryPond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/icon_water"
+        android:drawablePadding="10dp"
+        android:maxLength="3"
+        android:ems="10"
+        android:hint="Mật độ nước"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_EditHistoryPond" />
+
+    <EditText
+        android:id="@+id/edit_DoMan_EditHistoryPond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/icon_do_man"
+        android:drawablePadding="10dp"
+        android:maxLength="3"
+        android:ems="10"
+        android:hint="Độ mặn"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Loai_ThemAo" />
+
+    <EditText
+        android:id="@+id/edit_pH_EditHistoryPond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ph"
+        android:drawablePadding="10dp"
+        android:maxLength="3"
+        android:ems="10"
+        android:hint="Độ pH"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_DienTich_ThemAo" />
+
+    <EditText
+        android:id="@+id/edit_NhietDo_EditHistoryPond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/icon_nhiet_do"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:maxLength="2"
+        android:hint="Nhiệt độ"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_DienTich_ThemAo" />
+
+
+    <Button
+        android:id="@+id/btn_DongY_ThemLichSuAo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="Đồng ý"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/edit_NgayKetThuc_ThemAo"
+        app:layout_constraintStart_toStartOf="@+id/edit_NgayKetThuc_ThemAo"
+        app:layout_constraintTop_toBottomOf="@+id/edit_NgayKetThuc_ThemAo" />
+
+
+</LinearLayout>

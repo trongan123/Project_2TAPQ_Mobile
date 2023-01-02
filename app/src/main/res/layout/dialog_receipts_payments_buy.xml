@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner_16"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_yellow_corner_16_top_left_top_right"
+        android:text="Quản lý thu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:maxLength="40"
+            android:textColor="@android:color/black"
+            android:text="Vui long điền thông tin vào"/>
+
+        <EditText
+            android:id="@+id/edt_TenSanPham_QuanLyThu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="40"
+            android:layout_marginTop="16dp"
+            android:hint="Tên sản phẩm : "
+            android:inputType="textPersonName"
+            android:background="@drawable/bg_white_corner_10_border_gray"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_Gia_QuanLyThu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="5"
+            android:layout_marginTop="16dp"
+            android:hint="Giá : "
+            android:inputType="number"
+            android:background="@drawable/bg_white_corner_10_border_gray"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_SoLuong_QuanLyThu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLength="6"
+            android:hint="Số lượng : "
+            android:inputType="number"
+            android:background="@drawable/bg_white_corner_10_border_gray"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_NguoiNhap_QuanLyThu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLength="30"
+            android:hint="Người nhập : "
+            android:inputType="textCapWords"
+            android:background="@drawable/bg_white_corner_10_border_gray"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Huy_QuanLyThu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:alpha="0.4"
+            android:background="@drawable/bg_gray_corner_10"
+            android:text="Hủy"/>
+        <Button
+            android:id="@+id/btn_Luu_QuanLyThu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/bg_yellow_corner_10"
+            android:text="Lưu"/>
+    </LinearLayout>
+
+</LinearLayout>

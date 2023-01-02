@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:labelVisibilityMode="labeled">
+
+    <item android:id="@+id/bottom_ao"
+        android:icon="@drawable/ic_ao"
+        android:title="@string/botnav_ao"
+        android:label="Quản lý" />
+    <item android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/botnav_Home"/>
+    <item android:id="@+id/bottom_warehouse"
+        android:icon="@drawable/ic_baseline_house_siding_24"
+        android:title="Kho"
+        />
+
+</menu>

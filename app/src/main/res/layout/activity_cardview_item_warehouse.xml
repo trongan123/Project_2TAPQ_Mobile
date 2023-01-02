@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_item_WareHouse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_NameItemOfCardview"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name Item:"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_ThongTinOfNameItem"
+                android:layout_width="260dp"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Item test 1" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/your_id3"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="1dp"
+
+            android:background="#c0c0c0"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="1dp"
+
+            android:background="#c0c0c0"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_QuanlityOfCardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Quanlity     :" />
+
+            <TextView
+                android:id="@+id/tv_ThongTinOfQuanlity"
+                android:textSize="17sp"
+                android:textStyle="bold"
+
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Item Quanlity 1" />
+
+        </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="1dp"
+
+            android:background="#c0c0c0"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/your_id"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="1dp"
+
+            android:background="#c0c0c0"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_NoteOfcardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Note               :" />
+
+            <TextView
+                android:id="@+id/yv_ThongTinOfCardview"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  More examples
+A witness gave a detailed description of the man.
+He gave a very vivid and often shocking description of his time in prison.
+The book contains lyrical descriptions of the author's childhood.
+Would you say that is an accurate description of the current situation?
+A woman of your description was seen in the area on the night of the crime." />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

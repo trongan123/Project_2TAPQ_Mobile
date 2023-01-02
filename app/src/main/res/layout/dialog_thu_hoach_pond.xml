@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner_16"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông báo"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Bạn có muốn thu hoạch?"/>
+    </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edt_SanLuong_ThuHoachPond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:ellipsize="start"
+                android:textAlignment="center"
+                android:hint="Vui lòng nhập sản lượng (Tấn)"
+                android:inputType="number"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp">
+
+        <Button
+            android:id="@+id/btn_Huy_ThuHoach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:alpha="0.4"
+            android:background="@drawable/bg_gray_corner_10"
+            android:text="Hủy"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_DongY_ThuHoach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/bg_yellow_corner_10"
+            android:text="Đồng ý"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">2TAPQ</string>
+    <string name="activity_navigation_drawer">Quản lý</string>
+    <string name="HomePage">Trang chủ</string>
+
+    <string name="nav_homes">Homes</string>
+    <string name="nav_account">Tài khoản</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_ìnformation">Thông tin phần mềm</string>
+    <string name="nav_QuanLyNhanVien">Quản lý nhân viên</string>
+    <string name="nav_change_pasword">Đổi mật khẩu</string>
+    <string name="nav_AoDaThuHoach">Ao đã thu hoạch</string>
+    <string name="nav_dang_xuat">Đăng xuất</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="botnav_account">Tài Khoản</string>
+    <string name="botnav_ao">Quản lý</string>
+    <string name="botnav_Home">Trang chủ</string>
+    <string name="botnav_warehouse">Kho</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

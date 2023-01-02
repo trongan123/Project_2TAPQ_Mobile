@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+
+    android:padding="20dp"
+    android:background="@color/green1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_AnhAo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_nhomdoan" />
+
+    <TextView
+        android:id="@+id/tv_NameAccount_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Name Account"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_EmailAccount_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Mail Info"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

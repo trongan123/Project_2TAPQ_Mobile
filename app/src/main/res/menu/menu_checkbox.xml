@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Cá Tra"
+        android:id="@+id/item_CaTra"/>
+    <item android:title="Cá Trê"
+        android:id="@+id/item_CaTre"/>
+    <item android:title="Cá Chép"
+        android:id="@+id/item_CaChep"/>
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/Page_WareHouse">
+
+    <LinearLayout
+        android:id="@+id/ll_2icon_WareHouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_WareHosue">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/icon_HistoryWareHouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/icon_LichKho"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/iconhistorywarehouse" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Lịch sử kho"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/icon_ThemSanPhamKho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/icon_Add_LichSuKho"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:contentDescription="inconwarehouse2"
+                        android:src="@drawable/iconlichsukho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Thêm sản phẩm"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tv_warehouse"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ll_WareHosue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tv_Warehouse_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/backgound_fish_category"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:text="Kho"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_2button_warehouse"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginTop="43dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:layout_marginBottom="49dp"-->
+<!--        android:background="@drawable/backgound_fish_category"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ll_2icon_WareHouse">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_Previous_warehouse"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/backgound_fish_category"-->
+<!--            android:backgroundTint="#EEEEEE"-->
+<!--            android:elevation="10dp"-->
+<!--            android:text="  Previous  "-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <Space-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_CreateItem_warehouse"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/backgound_fish_category"-->
+<!--            android:backgroundTint="#EEEEEE"-->
+<!--            android:elevation="10dp"-->
+<!--            android:text="Create Item"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_WareHosue"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/backgound_activity_activity_history_store_house"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ListView
+            android:id="@+id/Lv_ListStoreHouse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

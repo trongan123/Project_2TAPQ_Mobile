@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner_16"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/bg_yellow_corner_16_top_left_top_right"
+        android:text="Chỉnh sửa thông tin nhân viên"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="Vui long điền thông tin vào"/>
+
+            <EditText
+                android:id="@+id/edt_Ten_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:hint="Tên : "
+                android:inputType="textCapWords"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edt_TenTaiKhoan_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Tên tài khoản : "
+                android:inputType="textCapWords"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edt_Pass_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLength="50"
+                android:hint="Mật khẩu : "
+                android:inputType="textPassword"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edt_Email_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLength="50"
+                android:hint="Email : "
+                android:inputType="textEmailAddress"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edt_SinhNhat_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Ngày Sinh : "
+                android:inputType="datetime"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edt_Phone_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLength="11"
+                android:hint="Phone : "
+                android:inputType="number"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+            <Spinner
+                android:id="@+id/edt_ChucVu_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Chức vụ : "
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/edt_Luong_NhanVien"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLength="8"
+                android:hint="Lương : "
+                android:inputType="number"
+                android:background="@drawable/bg_white_corner_10_border_gray"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_HuyEdit_NhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:alpha="0.4"
+            android:background="@drawable/bg_gray_corner_10"
+            android:text="Hủy"/>
+        <Button
+            android:id="@+id/btn_LuuEdit_NhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/bg_yellow_corner_10"
+            android:text="Lưu"/>
+    </LinearLayout>
+
+</LinearLayout>

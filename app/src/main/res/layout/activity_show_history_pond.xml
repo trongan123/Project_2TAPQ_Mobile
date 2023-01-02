@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".controller.ShowHistoryPondActivity">
+
+    <include layout="@layout/toolbar_showhistorypond" />
+
+    <LinearLayout
+        android:id="@+id/ll_NhatKiAo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_AnhAo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@drawable/btn_backround_edit"
+            android:src="@drawable/logo_nhomdoan" />
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Lv_ListHistoryPond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_NhatKiAo"/>
+
+</LinearLayout>

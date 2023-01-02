@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_information_app" />
+
+    <TextView
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ứng dụng quản lý ao cá"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ: ToanNHCE130199@fpt.edu.vn"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0.0"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

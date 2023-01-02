@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".controller.HomepageActivity">
+
+    <ImageView
+        android:id="@+id/img_logonhom_homepae"
+        android:layout_width="118dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_nhomdoan"
+        android:elevation="10dp"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tv_ThongTinTenDangNhapVao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Quang Nguyen"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_logonhom_homepae"
+        app:layout_constraintStart_toStartOf="@+id/img_logonhom_homepae"
+        app:layout_constraintTop_toBottomOf="@+id/img_logonhom_homepae" />
+
+    <TextView
+        android:id="@+id/tv_2TAPQ_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2TAPQ"
+        android:textStyle="bold"
+        android:textColor="#FEDD06"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_ThongTinTenDangNhapVao"
+        app:layout_constraintStart_toStartOf="@+id/tv_ThongTinTenDangNhapVao"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ThongTinTenDangNhapVao" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bottom_background_light_green"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_2TAPQ_homepage">
+
+        <TableLayout
+            android:id="@+id/tl_HomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bottom_background_light_green" />
+
+                        <ImageView
+                            android:id="@+id/img_WareHouse"
+                            android:layout_width="77dp"
+                            android:layout_height="63dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_home"
+                            app:layout_constraintEnd_toEndOf="@+id/img_home"
+                            app:layout_constraintStart_toStartOf="@+id/img_home"
+                            app:layout_constraintTop_toTopOf="@+id/img_home"
+                            app:srcCompat="@drawable/icon_warehouse_house" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_WareHosue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kho"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/img_backgound_maps"
+                            android:layout_width="74dp"
+                            android:layout_height="61dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_map"
+                            app:layout_constraintEnd_toEndOf="@+id/img_map"
+                            app:layout_constraintStart_toStartOf="@+id/img_map"
+                            app:layout_constraintTop_toTopOf="@+id/img_map"
+                            app:srcCompat="@drawable/iconnhatki" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Maps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nhật ký"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_Inbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bottom_background_light_green" />
+
+                        <ImageView
+                            android:id="@+id/img_backgound_Inbox"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_Inbox"
+                            app:layout_constraintEnd_toEndOf="@+id/img_Inbox"
+                            app:layout_constraintStart_toStartOf="@+id/img_Inbox"
+                            app:layout_constraintTop_toTopOf="@+id/img_Inbox"
+                            app:srcCompat="@drawable/iconnotifi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Inbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thông báo"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_Settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bottom_background_light_green" />
+
+                        <ImageView
+                            android:id="@+id/img_backgound_settings"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_Settings"
+                            app:layout_constraintEnd_toEndOf="@+id/img_Settings"
+                            app:layout_constraintStart_toStartOf="@+id/img_Settings"
+                            app:layout_constraintTop_toTopOf="@+id/img_Settings"
+                            app:srcCompat="@drawable/iconthu" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quản lý thu"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_Favorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bottom_background_light_green" />
+
+                        <ImageView
+                            android:id="@+id/img_Ao"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_Favorite"
+                            app:layout_constraintEnd_toEndOf="@+id/img_Favorite"
+                            app:layout_constraintStart_toStartOf="@+id/img_Favorite"
+                            app:layout_constraintTop_toTopOf="@+id/img_Favorite"
+                            app:srcCompat="@drawable/iconpond" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Favorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ao"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img_Logut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bottom_background_light_green" />
+
+                        <ImageView
+                            android:id="@+id/img_backgound_Logout"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_Logut"
+                            app:layout_constraintEnd_toEndOf="@+id/img_Logut"
+                            app:layout_constraintStart_toStartOf="@+id/img_Logut"
+                            app:layout_constraintTop_toTopOf="@+id/img_Logut"
+                            app:srcCompat="@drawable/iconchi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quản lý chi"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tl_HomePage"
+            app:layout_constraintVertical_bias="0.194">
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_NgayThangNam"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:text="ngay thang nam"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_blabla" />-->
+
+            <ImageView
+                android:id="@+id/img_benduoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_white" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_blabla"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:text="bla bla bla"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:src="@drawable/ic_notifications"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.714"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/img_benduoi"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.75" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
